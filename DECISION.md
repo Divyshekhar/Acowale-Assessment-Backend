@@ -65,7 +65,6 @@ These are valuable improvements but were outside the scope of the assignment.
 With additional time, I would implement:
 
 * GitHub Actions CI/CD
-* Docker and Docker Compose
 * OpenAPI / Swagger documentation
 * Monitoring and centralized logging
 * Audit logs for admin actions
