@@ -130,7 +130,7 @@ Protected:
 - `DELETE /api/v1/feedback/:id`
 - `GET /api/v1/analytics`
 
-Detailed endpoint documentation is in [docs/API.md](docs/API.md).
+Detailed endpoint documentation is in [API.md](API.md).
 
 ## Rate Limiting
 
