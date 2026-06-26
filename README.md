@@ -6,8 +6,8 @@ Production-oriented backend for a customer feedback platform. Public users can s
 
 - **Frontend Repository:** https://github.com/Divyshekhar/acowale-feedback-frontend
 - **Backend Repository:** https://github.com/Divyshekhar/Acowale-Assessment-Backend
-- **Live Frontend:** https://your-frontend.vercel.app
-- **Live Backend:** https://your-backend.onrender.com
+- **Live Frontend:** https://acowale-assessment-frontend.vercel.app/login
+- **Live Backend:** https://acowale-assessment-backend.onrender.com
 
 
 ## Tech Stack
