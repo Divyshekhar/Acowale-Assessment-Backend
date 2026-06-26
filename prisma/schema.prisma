@@ -1,0 +1,50 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum FeedbackCategory {
+  PRODUCT
+  BUG
+  FEATURE_REQUEST
+  SUPPORT
+  OTHER
+}
+
+enum FeedbackStatus {
+  PENDING
+  IN_REVIEW
+  RESOLVED
+  REJECTED
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([createdAt])
+}
+
+model Feedback {
+  id        String           @id @default(cuid())
+  category  FeedbackCategory
+  status    FeedbackStatus   @default(PENDING)
+  comment   String
+  email     String?
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+
+  @@index([category])
+  @@index([status])
+  @@index([createdAt])
+  @@index([category, createdAt])
+  @@index([status, createdAt])
+}
