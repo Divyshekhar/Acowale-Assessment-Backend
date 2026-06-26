@@ -4,7 +4,7 @@ import { env } from "../config/env";
 
 const accessTokenCookieOptions = (): CookieOptions => ({
   httpOnly: true,
-  sameSite: "lax",
+  sameSite: "none",
   secure: env.NODE_ENV === "production",
   path: "/",
 });

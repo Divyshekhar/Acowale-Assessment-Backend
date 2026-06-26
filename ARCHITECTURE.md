@@ -213,7 +213,7 @@ Cookie settings:
 
 ```text
 httpOnly: true
-sameSite: "lax"
+sameSite: "none"
 secure: true only in production
 ```
 

@@ -146,7 +146,7 @@ For multi-instance production deployments, replace the in-memory store with Redi
 Admins authenticate with email and password. Passwords are bcrypt hashes in the database. On login, the API sets a JWT in an HttpOnly cookie:
 
 - `httpOnly: true`
-- `sameSite: "lax"`
+- `sameSite: "none"`
 - `secure: true` in production only
 
 Refresh tokens, sessions, and Passport are intentionally not used.
